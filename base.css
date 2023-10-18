@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: #FFFFFF;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -17,21 +17,19 @@ h1 {
 
 .events {
     width: 80%;
-    background-color:#F05033;
-    border-radius: 15px;
+    background-color:#3B8AEB;
+    border-radius: 20px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
 }
 
 .event {
-    width: 550px;
-    border-radius: 10px;
+    width: 500px;
+    border-radius: 20px;
     padding: 10px;
-    margin: 2.5% 2.5% 2.5% 2.5%;
-    background-color: rgb(225, 225, 225);
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 2.5%;
+    background-color: #EEEEEE;
 }
 
 .event-title {
@@ -72,7 +70,7 @@ h1 {
     font-size: 18px;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #F05033;
+    background-color: #3B8AEB;
     border: none;
     border-radius: 10px;
     transition: .2s;
@@ -81,5 +79,10 @@ h1 {
 
 .access-button:hover {
     cursor: pointer;
-    transform: scale(105%);
+    transform: scale(120%);
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
