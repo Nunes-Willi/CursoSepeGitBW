@@ -18,7 +18,7 @@
                 <p class="description">Esperamos que seja muito legal e que todos gostem! Este texto que estou escrevendo agora é apenas para encher linguiça e para o nosso exemplo ficar bonito e bem preenchido na hora de vocês verem!</p>
             </div>
             <div class="date-hour-place">18/10 - (08:30 - 10:00) - <b>Laboratório B2</b></div>
-            <button class="access-button">Acessar evento</button>
+            <button class="access-button"> <a href="https://github.com/ViniciusAcordiSoethe/CursoSepeGit"> Acessar evento</a></button>
         </div>
 
         <div class="event">
@@ -31,7 +31,7 @@
             <button class="access-button">Acessar evento</button>
         </div>
 
-        <div class="event">
+        <div class="event" id="japanese-course">
             <h3 class="event-title">Curso Japonês</h3>
             <div class="event-info">
                 <div class="image" id="image_3"></div>
@@ -39,6 +39,7 @@
             </div>
             <div class="date-hour-place">18/10 - (08:30 - 10:00) - <b>Laboratório B2</b></div>
             <button class="access-button">Acessar evento</button>
+            <button class="access-button" onclick="deleteCourse()">Excluir</button>
         </div>
         
         <div class="event">
@@ -51,5 +52,12 @@
             <button class="access-button">Acessar evento</button>
         </div>
     </section>
+
+    <script>
+        function deleteCourse() {
+            var element = document.getElementById("japanese-course");
+            element.parentNode.removeChild(element);
+        }
+    </script>
 </body>
 </html>
